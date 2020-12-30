@@ -26,6 +26,7 @@
   <ItemGroup>
     <ClCompile Include="IGameObject.cpp" />
     <ClCompile Include="IPlayable.cpp" />
+    <ClCompile Include="MuskApprovedApp.cpp" />
     <ClCompile Include="Rocket.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -98,9 +99,10 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
