@@ -1,5 +1,16 @@
 #include "Rocket.h"
 
+// Set sprites sequence 
+HBITMAP UnLocatedSpr = nullptr;
+HBITMAP GameSpr = nullptr;
+HBITMAP DefeatSpr = nullptr;
+HBITMAP ActiveSpr = nullptr;
+
+Rocket::Rocket()
+{
+
+}
+
 // Able to start game
 bool Rocket::IsAble()
 {

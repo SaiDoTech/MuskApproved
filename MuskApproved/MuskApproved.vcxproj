@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AppWindow.h" />
     <ClInclude Include="IGameObject.h" />
     <ClInclude Include="IPlayable.h" />
     <ClInclude Include="Rocket.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AppWindow.cpp" />
     <ClCompile Include="IGameObject.cpp" />
     <ClCompile Include="IPlayable.cpp" />
     <ClCompile Include="MuskApprovedApp.cpp" />

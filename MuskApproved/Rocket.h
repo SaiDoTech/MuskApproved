@@ -19,17 +19,7 @@ public:
 	int GetX() override;
 	int GetY() override;
 
+	Rocket();
 	bool IsAble();
-
-private:
-	// Rocket's state sprites 
-	HBITMAP UnLocatedSpr = nullptr;
-	HBITMAP GameSpr = nullptr;
-	HBITMAP DefeatSpr = nullptr;
-	HBITMAP ActiveSpr = nullptr;
-
-	// Rocket's position
-	int X = 0;
-	int Y = 0;
 };
 
