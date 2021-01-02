@@ -4,11 +4,11 @@ LRESULT CALLBACK wndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
 	switch (uMsg)
 	{
-	case WM_DESTROY:
-	{
-		PostQuitMessage(EXIT_SUCCESS);
-	}
-	break;
+		case WM_DESTROY:
+		{
+			PostQuitMessage(EXIT_SUCCESS);
+		}
+		break;
 	}
 
 	return DefWindowProc(hwnd, uMsg, wParam, lParam);
@@ -43,7 +43,7 @@ int CreateAppWindow(HINSTANCE hInstance, int nCmdShow)
 		hwnd == INVALID_HANDLE_VALUE)
 		return EXIT_FAILURE;
 
-	SetTimer(hwnd, 1337, 1000 / 30, NULL);
+	//SetTimer(hwnd, 1337, 1000 / 30, NULL);
 
 	ShowWindow(hwnd, nCmdShow);
 	UpdateWindow(hwnd);

@@ -1,23 +1,32 @@
 #include "Rocket.h"
 
+#define UnLocatedSpr L"SkyBack.bmp"
+#define GameSpr L"Rocket.bmp"
+#define DefeatSpr L"SkyBack.bmp"
+
 // Set sprites sequence 
-HBITMAP UnLocatedSpr = nullptr;
-HBITMAP GameSpr = nullptr;
-HBITMAP DefeatSpr = nullptr;
-HBITMAP ActiveSpr = nullptr;
+HBITMAP HUnLocatedSpr = nullptr;
+HBITMAP HGameSpr = nullptr;
+HBITMAP HDefeatSpr = nullptr;
+HBITMAP HActiveSpr = nullptr;
 
 Rocket::Rocket()
 {
+    listSpr.push_back(HUnLocatedSpr = (HBITMAP)LoadImageW(NULL, UnLocatedSpr, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE));
+    listSpr.push_back(HGameSpr = (HBITMAP)LoadImageW(NULL, GameSpr, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE));
+    listSpr.push_back(HDefeatSpr = (HBITMAP)LoadImageW(NULL, DefeatSpr, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE));
 
+    HActiveSpr = HGameSpr;
+    //HActiveSpr = HUnLocatedSpr;
 }
 
 // Able to start game
 bool Rocket::IsAble()
 {
-    if ((UnLocatedSpr != nullptr) &&
-        (GameSpr != nullptr) &&
-        (DefeatSpr != nullptr) &&
-        (ActiveSpr != nullptr))
+    if ((HUnLocatedSpr != nullptr) &&
+        (HGameSpr != nullptr) &&
+        (HDefeatSpr != nullptr) &&
+        (HActiveSpr != nullptr))
     {
         return true;
     }
@@ -59,10 +68,10 @@ void Rocket::MoveRight()
 
 void Rocket::MoveUp()
 {
-    Y -= 1;
+    Y += 1;
 }
 
 void Rocket::MoveDown()
 {
-    Y += 1;
+    Y -= 1;
 }

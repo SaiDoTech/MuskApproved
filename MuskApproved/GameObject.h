@@ -2,21 +2,21 @@
 #include <list>
 #include <windows.h>
 
-class IGameObject
+class GameObject
 {
 public:
-	virtual void SetX(int x) = 0;
-	virtual void SetY(int y) = 0;
-	virtual int GetX() = 0;
-	virtual int GetY() = 0;
+	virtual void SetX(int x);
+	virtual void SetY(int y);
+	virtual int GetX();
+	virtual int GetY();
 
 protected:
-	// Rocket's position
+	// Object's position
 	int X = 0;
 	int Y = 0;
 
 	// All sprites, that can be displayed for the object
-	std::list<HBITMAP> objectSpr;
+	std::list<HBITMAP> listSpr;
 	// Sprite, the currently displayed
 	HBITMAP activeSpr;
 };

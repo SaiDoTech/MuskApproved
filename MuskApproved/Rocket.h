@@ -1,10 +1,9 @@
 #pragma once
-#include "IPlayable.h"
-#include "IGameObject.h"
+#include "MovingObject.h"
 #include <windows.h>
 
 class Rocket :
-    public IPlayable, IGameObject
+    public MovingObject
 {
 public:
 	// IPlayable
