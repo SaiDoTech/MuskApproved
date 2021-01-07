@@ -9,20 +9,22 @@ GameObject::GameObject()
 
 void GameObject::SetX(int x)
 {
+    X = x;
 }
 
 void GameObject::SetY(int y)
 {
+    Y = y;
 }
 
 int GameObject::GetX()
 {
-    return 0;
+    return X;
 }
 
 int GameObject::GetY()
 {
-    return 0;
+    return Y;
 }
 
 bool GameObject::IncState()
