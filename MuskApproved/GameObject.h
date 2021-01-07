@@ -5,10 +5,16 @@
 class GameObject
 {
 public:
+	GameObject();
+
 	virtual void SetX(int x);
 	virtual void SetY(int y);
 	virtual int GetX();
 	virtual int GetY();
+
+	virtual bool IncState();
+	virtual bool DecState();
+	virtual void SetListSpr(std::list<HBITMAP>);
 
 protected:
 	// Object's position
