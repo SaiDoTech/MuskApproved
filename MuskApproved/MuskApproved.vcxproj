@@ -21,15 +21,15 @@
   <ItemGroup>
     <ClInclude Include="AppWindow.h" />
     <ClInclude Include="FallControl.h" />
-    <ClInclude Include="GameObject.h" />
-    <ClInclude Include="MovingObject.h" />
+    <ClInclude Include="IGameObject.h" />
+    <ClInclude Include="IMovable.h" />
     <ClInclude Include="Rocket.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AppWindow.cpp" />
     <ClCompile Include="FallControl.cpp" />
-    <ClCompile Include="GameObject.cpp" />
-    <ClCompile Include="MovingObject.cpp" />
+    <ClCompile Include="IGameObject.cpp" />
+    <ClCompile Include="IMovable.cpp" />
     <ClCompile Include="MuskApprovedApp.cpp" />
     <ClCompile Include="Rocket.cpp" />
   </ItemGroup>

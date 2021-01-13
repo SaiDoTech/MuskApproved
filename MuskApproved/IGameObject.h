@@ -2,10 +2,10 @@
 #include <list>
 #include <windows.h>
 
-class GameObject
+class IGameObject
 {
 public:
-	GameObject();
+	IGameObject();
 
 	virtual void SetX(int x);
 	virtual void SetY(int y);

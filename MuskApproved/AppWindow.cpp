@@ -1,4 +1,5 @@
 #include <windows.h>
+#include "AppWindow.h"
 
 LRESULT CALLBACK wndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
@@ -14,7 +15,7 @@ LRESULT CALLBACK wndProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 	return DefWindowProc(hwnd, uMsg, wParam, lParam);
 }
 
-int CreateAppWindow(HINSTANCE hInstance, int nCmdShow)
+int CreateAppWindow(HINSTANCE hInstance, int nCmdShow, FallControl gameLogic)
 {
 	MSG msg{};
 	HWND hwnd{};

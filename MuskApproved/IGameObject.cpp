@@ -1,43 +1,43 @@
-#include "GameObject.h"
+#include "IGameObject.h"
 
-GameObject::GameObject()
+IGameObject::IGameObject()
 {
     activeSpr = nullptr;
     X = 0;
     Y = 0;
 }
 
-void GameObject::SetX(int x)
+void IGameObject::SetX(int x)
 {
     X = x;
 }
 
-void GameObject::SetY(int y)
+void IGameObject::SetY(int y)
 {
     Y = y;
 }
 
-int GameObject::GetX()
+int IGameObject::GetX()
 {
     return X;
 }
 
-int GameObject::GetY()
+int IGameObject::GetY()
 {
     return Y;
 }
 
-bool GameObject::IncState()
+bool IGameObject::IncState()
 {
     return false;
 }
 
-bool GameObject::DecState()
+bool IGameObject::DecState()
 {
     return false;
 }
 
-void GameObject::SetListSpr(std::list<HBITMAP> list)
+void IGameObject::SetListSpr(std::list<HBITMAP> list)
 {
     if (list.empty())
     {

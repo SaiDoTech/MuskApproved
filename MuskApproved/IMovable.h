@@ -1,8 +1,6 @@
 #pragma once
-#include "GameObject.h"
 
-class MovingObject
-	: public GameObject
+class IMovable
 {
 public:
 	virtual void MoveLeft();

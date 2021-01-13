@@ -36,26 +36,6 @@ bool Rocket::IsAble()
     }
 }
 
-void Rocket::SetX(int x)
-{   
-    X = x;
-}
-
-int Rocket::GetX()
-{
-    return X;
-}
-
-void Rocket::SetY(int y) 
-{
-    Y = y;
-}
-
-int Rocket::GetY() 
-{
-    return Y;
-}
-
 void Rocket::MoveLeft()
 {
     X -= 1;

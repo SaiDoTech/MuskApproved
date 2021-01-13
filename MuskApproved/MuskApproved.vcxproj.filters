@@ -24,10 +24,10 @@
     <ClInclude Include="FallControl.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="GameObject.h">
+    <ClInclude Include="IGameObject.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="MovingObject.h">
+    <ClInclude Include="IMovable.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
@@ -44,10 +44,10 @@
     <ClCompile Include="FallControl.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="GameObject.cpp">
+    <ClCompile Include="IGameObject.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
-    <ClCompile Include="MovingObject.cpp">
+    <ClCompile Include="IMovable.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
